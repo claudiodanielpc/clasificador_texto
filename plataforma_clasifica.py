@@ -31,5 +31,3 @@ if st.button("Clasificar y guardar"):
         # Guarda en Google Sheets (añade nueva fila)
         sheet.append_row([texto, clasificacion])
         st.success(f"Clasificado como: {clasificacion} y guardado en Google Sheets")
-
-https://docs.google.com/spreadsheets/d/1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g/edit?usp=sharing
