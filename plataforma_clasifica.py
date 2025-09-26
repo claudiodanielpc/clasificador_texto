@@ -4,7 +4,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 import json
 
 # Definición del Scope (como lo tienes)
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive", "http://docs.google.com/spreadsheets/d"]
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive", "https://docs.google.com/spreadsheets/d"]
 
 # 🔒 NUEVA FORMA SEGURA DE CARGAR CREDENCIALES
 # st.secrets["gcp_service_account"] devuelve el diccionario TOML (o JSON)
