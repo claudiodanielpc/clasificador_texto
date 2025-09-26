@@ -1,17 +1,27 @@
 import streamlit as st
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+import json
 
-# Autenticación con Google
+# Definición del Scope (como lo tienes)
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("pgd-clasificador-a4c4118c26a8.json", scope)
+
+# 🔒 NUEVA FORMA SEGURA DE CARGAR CREDENCIALES
+# st.secrets["gcp_service_account"] devuelve el diccionario TOML (o JSON)
+creds_dict = st.secrets["gcp_service_account"]
+
+# Crea el objeto ServiceAccountCredentials usando el diccionario (no el nombre del archivo)
+creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
+
+# Autorizar gspread
 client = gspread.authorize(creds)
 
-# Abre la hoja (usa la URL o el nombre)
-sheet = client.open("https://docs.google.com/spreadsheets/d/1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g/edit?usp=sharing").sheet1
+# Resto de tu código...
+sheet = client.open("https://docs.google.com/spreadsheets/d/1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g/edit?usp=drive_link").sheet1
 
-# Interfaz
 st.title("Clasificador PGD con almacenamiento")
+# ...
+
 texto = st.text_area("Escribe tu opinión o propuesta:")
 
 if st.button("Clasificar y guardar"):
