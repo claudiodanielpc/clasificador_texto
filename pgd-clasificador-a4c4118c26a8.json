@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pgd-clasificador",
+  "private_key_id": "a4c4118c26a82b80b5c15f8ca978d344b39df66a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCr6eAhuxGu1cRm\nWQz/7b+bK0GQrzN01kh7rr1DIV20TZlxqdT2WxZxjKx0wKB2ZvHhoGY6pU+M6t/7\nE8S0AioyT6AJxp8cR27gNixG3CA6YsfB7Z/4Zn6V3l0EqTBmK6PvQzBKeZ72+VtR\nfhjf/Isk8l4DkwERJWRoYd6plQxtxpMiBvVRIwzPVZx6QWBvwPNy0FKij0RxxEPG\njEpypgturby2DNabi9spUiXZtcl2KxMGWcoiSFki3F3Ju6lmvBHHyBM7JfpM6Dgx\n4WcH3MliaU7rkExyA5YU9lMJlGCVx8/cOF6l6G9ikFA3Xqgacf2pgO/9kcaCeFp/\nqTLjGD8JAgMBAAECggEABeiAxR1VFel6LtD1Vb+0Vmnd0/zMIOzTCuUjfgYh3qDN\ncDmXpxZ++/dgtJaA1/DhHpGmUcen/JN/OnV1zNXyNfkZ6pwX5cnoBplLW5gUciKT\nnkJDaC8QP1L9ZrvwfOJtEjurPN6sgZe/oAUHEn5EbfL3xi8BhLcAmhHFrEBXcAJU\n4fjVwIv9ryhixdKmAf/lre6fOY+B7IV/ADmbBcQViiVYxg4ojgKcQPuG7RDLnUVr\n6P9dYgmdQ9r8RVEVRtPQRf5KVeLFfE2ao+XryTBZ1aDG1gMh9TZe6Hsof5461mO3\nCTSUm8OSdm8LIR824vQD0vEV3QeVOWcWJOXe0aKu3QKBgQDuU+evIV/yCs6eZ+Sh\nLGsGbV3uHk3m+H+h8Rh284dqWi3E+Je0DT8YWtfEPhe2MDDZCLUDYCMiMf/q11ef\nR+JnDw5CncqXLi2ojgtq2XGCKDnhEwGFb/tBF+WfCO2WLTOvGHLr2vN0q6/eTjUI\nEwymIdnxI/awXxBFVL+m89ZN0wKBgQC4qUCvA20TXOY/U6GH1kVUglMn/ayuSFi6\nfec9FRAVesTRIDKmfu/e7URT01euLypl0N5Ib74D0PhRuUsUoBJCEBD0ZcPfy+X8\nUUr6H3nmWoJFtcgHCPdiCdNUQCR8EHegc6WRq00T8jm3t5Fblin2A73JmzGUy4Mc\nBuFlMeGKMwKBgEONZM4vF5LznT0pFZTZkjxwI3+q90nQhdzRCa4tuORcSzzZeaZ/\nWrL8jMwDDZWGc1IRNb2PMmYu5esavqtXJMUxb0lSkGnpnOd526Kdn57U6BLz4CqC\nYyVAMMWzMiSvC0dGFszjcr5PK7pHUKDJRXyRe8Tt/K5hQ6tjKi+YTdYhAoGBAK0R\nA6yDO4FAOhLz4JocudGgays51tNovq/aPBTFXtOiwj91O8NLiKiYGsetdamsTsIp\n5YpiH+YXvgNp8/Iaq8H6qMlFbzSaNqwpzGlrgqXgAeQvoI7nWmMp7kQx8X/NNzDL\n8kr6Dz04cdu7UaJStHT7wK3oo6leqzxjPm/HNih9AoGBALIQ66LqRFzGWeP1AenS\nqBMuWP62Kdd9h3JfVBrv+5eNxcFGezwI3ZYGuyRdfvJv4zme/c9uDMqlWEsEUC/S\nW09jMGDNlZCQHOTiEIXM1qJdrQUBR5pIeAn6ayGMsuksmymzNmrH4F6HUCWOjXmu\ntVEN08WmroEwv14R1I3et9Sj\n-----END PRIVATE KEY-----\n",
+  "client_email": "pgd-service-account@pgd-clasificador.iam.gserviceaccount.com",
+  "client_id": "115992309681401514744",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pgd-service-account%40pgd-clasificador.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
