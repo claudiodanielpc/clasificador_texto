@@ -17,8 +17,8 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
 
 # Abre la hoja de cálculo por su clave (ID)
-SPREADSHEET_KEY = "1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g"
-spreadsheet = client.open_by_key(SPREADSHEET_KEY)
+SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g/edit?usp=sharing"
+spreadsheet = client.open_by_url(SPREADSHEET_URL)
 sheet = spreadsheet.sheet1
 
 st.title("Clasificador PGD con almacenamiento")
