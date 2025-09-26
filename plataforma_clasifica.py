@@ -16,8 +16,10 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 # Autorizar gspread
 client = gspread.authorize(creds)
 
-# Resto de tu código...
-sheet = client.open("textos_prueba").sheet1
+# Abre la hoja de cálculo por su clave (ID)
+SPREADSHEET_KEY = "1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g"
+spreadsheet = client.open_by_key(SPREADSHEET_KEY)
+sheet = spreadsheet.sheet1
 
 st.title("Clasificador PGD con almacenamiento")
 # ...
