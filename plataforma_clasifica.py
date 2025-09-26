@@ -4,7 +4,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 import json
 
 # Definición del Scope (como lo tienes)
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive", "http://docs.google.com/spreadsheets/d"]
 
 # 🔒 NUEVA FORMA SEGURA DE CARGAR CREDENCIALES
 # st.secrets["gcp_service_account"] devuelve el diccionario TOML (o JSON)
@@ -17,7 +17,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
 
 # Resto de tu código...
-sheet = client.open("https://docs.google.com/spreadsheets/d/1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g/edit?usp=drive_link").sheet1
+sheet = client.open("textos_prueba").sheet1
 
 st.title("Clasificador PGD con almacenamiento")
 # ...
@@ -31,3 +31,5 @@ if st.button("Clasificar y guardar"):
         # Guarda en Google Sheets (añade nueva fila)
         sheet.append_row([texto, clasificacion])
         st.success(f"Clasificado como: {clasificacion} y guardado en Google Sheets")
+
+https://docs.google.com/spreadsheets/d/1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g/edit?usp=sharing
