@@ -4,11 +4,11 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 # Autenticación con Google
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("credenciales.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("pgd-clasificador-a4c4118c26a8.json", scope)
 client = gspread.authorize(creds)
 
 # Abre la hoja (usa la URL o el nombre)
-sheet = client.open("PGD_Clasificaciones").sheet1
+sheet = client.open("textos_prueba").sheet1
 
 # Interfaz
 st.title("Clasificador PGD con almacenamiento")
