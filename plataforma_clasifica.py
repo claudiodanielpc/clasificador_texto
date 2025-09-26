@@ -8,7 +8,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("pgd-clasificador-a4c41
 client = gspread.authorize(creds)
 
 # Abre la hoja (usa la URL o el nombre)
-sheet = client.open("textos_prueba").sheet1
+sheet = client.open("https://docs.google.com/spreadsheets/d/1xwNlCNsIaUkW5t5W2ewLifbhRq86k79boUaL4f3DG9g/edit?usp=drive_link").sheet1
 
 # Interfaz
 st.title("Clasificador PGD con almacenamiento")
